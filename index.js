@@ -8,7 +8,7 @@ const port = 3000;
 
 const server = http.createServer((req, res) => {
     console.log('Request for ' + req.url + ' by method ' + req.method);
-  
+   
     if (req.method == 'GET') {
       var fileUrl;
       if (req.url == '/') fileUrl = '/index.html';
